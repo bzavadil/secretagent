@@ -68,13 +68,18 @@ html {
   background-color: firebrick;
 }
 
-.storenav nav {
+.storenav li {
   display: inline-block;
   padding: 0.75rem 4rem 0.75rem 4rem;
+  text-align: center;
 }
 
 .storenav a {
   color: white;
+}
+
+nav select {
+  display: none;
 }
 
 .inventory {
@@ -143,4 +148,32 @@ footer {
 
 footer h5 {
   padding-top: 2.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .logotext {
+    font-size: 0.75rem;
+  }
+  .topsectiontext h2 {
+    font-size: 0.90rem;
+  }
+  .topsectiontext h4 {
+    font-size: 0.80rem;
+  }
+  nav ul {
+    display: none;
+  }
+  nav select {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .inventory {
+    overflow: hidden;
+  }
+  .item {
+    width: 47%;
+    height: auto;
+  }
 }
