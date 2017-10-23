@@ -18,6 +18,7 @@ html {
   width: auto;
   padding-left: 0.5rem;
   padding-right: 1rem;
+  padding-top: 0.66rem;
   margin-left: 9rem;
 }
 
@@ -59,4 +60,87 @@ html {
   padding-right: 3rem;
   font-weight: bold;
   font-size: 1rem;
+}
+
+.storenav {
+  height: auto;
+  width: 100%;
+  background-color: firebrick;
+}
+
+.storenav nav {
+  display: inline-block;
+  padding: 0.75rem 4rem 0.75rem 4rem;
+}
+
+.storenav a {
+  color: white;
+}
+
+.inventory {
+  padding: 3rem 4rem 3rem 4rem;
+}
+
+.item {
+  display: inline-block;
+  height: 13rem;
+  width: 30%;
+  text-align: center;
+  border: 4px solid black;
+}
+
+.inventory img {
+  margin: 2rem;
+  width: auto;
+  height: 9rem;
+}
+
+.inventory h5 {
+  text-align: center;
+  background-color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 4px solid black;
+}
+
+.lastinfo {
+  padding: 3rem 4rem 4rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.infobox {
+  display: inline-block;
+}
+
+.titleinfo {
+  width: 100%;
+  height: 3rem;
+}
+
+.infobox {
+  width: 35%;
+}
+
+.infobox h5 {
+  height: auto;
+  width: 30%;
+  padding: 1rem 6rem 1rem 2rem;
+  background-color: black;
+}
+
+.infobox h6 {
+  color: grey;
+}
+
+footer {
+  height: 5rem;
+  background-color: black;
+  text-align: left;
+  width: auto;
+}
+
+footer h5 {
+  padding-top: 2.5rem;
 }
