@@ -84,10 +84,12 @@ nav select {
 
 .inventory {
   padding: 3rem 4rem 3rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .item {
-  display: inline-block;
   height: 13rem;
   width: 30%;
   text-align: center;
@@ -95,8 +97,9 @@ nav select {
 }
 
 .inventory img {
-  margin: 2rem;
-  width: auto;
+  margin: 2em 0;
+  justify-content: center;
+  align-content: center;
   height: 9rem;
 }
 
@@ -151,29 +154,110 @@ footer h5 {
 }
 
 @media only screen and (max-width: 1024px) {
+
   .logotext {
     font-size: 0.75rem;
   }
+
   .topsectiontext h2 {
     font-size: 0.90rem;
   }
+
   .topsectiontext h4 {
     font-size: 0.80rem;
   }
+
   nav ul {
     display: none;
   }
+
   nav select {
     display: inline-block;
     width: 100%;
     margin: 0 auto;
     text-align: center;
   }
+
   .inventory {
     overflow: hidden;
   }
+
+  #glassessection {
+    display: none;
+  }
+
   .item {
     width: 47%;
     height: auto;
   }
 }
+
+@media only screen and (max-width: 470px) {
+
+  body {
+    margin: 0;
+  }
+
+  .title img {
+    padding-top: 0.5rem 0 0 0;
+    margin: 0;
+  }
+
+  .logotext {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .topsection {
+    height: 15rem;
+    margin: 0;
+  }
+
+  .topsectiontext {
+    height: 5rem;
+    width: 100%;
+    padding-left: 0rem;
+    margin: 10rem 0 1rem 0;
+  }
+
+  .topsectiontext h4 {
+    font-size: 0.77rem;
+    font-weight: bold;
+    padding-left: 2rem;
+    margin: 0;
+  }
+
+  .topsectiontext h2 {
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+
+  .item {
+    width: 90%;
+    height: auto;
+  }
+
+  #watchsection {
+    display: none;
+  }
+
+  .lastinfo {
+    display: block;
+  }
+
+  #hours {
+    display: block;
+    width: 90%;
+  }
+
+  #location {
+    display: block;
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+  }
